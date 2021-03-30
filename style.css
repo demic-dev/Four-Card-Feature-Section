@@ -1,0 +1,144 @@
+@font-face {
+  font-family: Poppins;
+  src: url(./fonts/Poppins-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(./fonts/Poppins-Light.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("./fonts/Poppins-Medium.ttf");
+  font-weight: 400;
+}
+
+body {
+  box-sizing: border-box;
+  background: hsl(0, 0%, 98%);
+  color: hsl(234, 12%, 34%);
+}
+
+h2 {
+  font-family: Poppins;
+  font-weight: 400;
+}
+
+p {
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 200;
+}
+
+.content-wrapper {
+  max-width: 90%;
+  min-width: 70%;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 22px;
+  text-align: center;
+}
+
+.title {
+  font-family: Poppins;
+  font-weight: 200;
+}
+.author {
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+.description {
+  font-weight: 200;
+  font-family: Poppins;
+}
+
+.top-description {
+  text-align: center;
+}
+
+.card-containers {
+  width: 100%;
+  display: grid;
+
+  gap: 32px;
+
+  margin: 4rem auto;
+  grid-template-columns: repeat(1, 1fr);
+
+  align-items: center;
+  justify-items: center;
+}
+
+@media (min-width: 1440px) {
+  .card-containers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .mid-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.mid-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 32px;
+
+  align-items: center;
+  justify-items: center;
+}
+
+.card {
+  background-color: #fff;
+  width: 80%;
+
+  border-radius: 8px;
+
+  box-shadow: hsl(229, 6%, 66%) 10px 15px 20px;
+
+  position: relative;
+  overflow: hidden;
+
+  display: grid;
+
+  align-content: flex-start;
+  gap: 0px;
+
+  padding: 32px;
+}
+
+.first {
+  background-color: hsl(0, 78%, 62%);
+}
+
+.second {
+  background-color: hsl(180, 62%, 55%);
+}
+
+.third {
+  background-color: hsl(34, 97%, 64%);
+}
+
+.fourth {
+  background-color: hsl(212, 86%, 64%);
+}
+
+.card-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+}
+
+.right {
+  margin-top: 16px;
+  justify-self: flex-end;
+}
